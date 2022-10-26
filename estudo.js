@@ -5,6 +5,10 @@ function moeda(atual){
   function calcula(){
     let c = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
+    let t = document.getElementById("meses").value;
+    
+
+
     if (!Number(c)){
       alert("O valor deve ser um Número");
       document.getElementById("valor").value = "";
@@ -17,8 +21,18 @@ function moeda(atual){
       document.getElementById("juros").focus();
      return
     }
-    
-    let r = c * (1 + (j/100));
+    if (!Number(t)){
+      alert("O numero de meses deve ser um Número");
+      document.getElementById("meses").value = "";
+      document.getElementById("meses").focus();
+     return
+    }
+    let r = c;
+     for(let m = 1; m <= t; m++){
+        r = c * (1 + (j / 100));
+        r = r;
+        document.write("Mês " + m + " - valor: " + moeda(r)+"<br>");
+     }
     document.write("Resultado:" + moeda(r))
   }
   
