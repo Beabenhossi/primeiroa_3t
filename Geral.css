@@ -1,21 +1,45 @@
 .calculadora {
     background-color: rgb(231, 231, 77);
-    color: white;
+    color: rgb(0, 0, 0);
     width: 200px;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
 }
  .calculadora input {
-    background-color: rgb(60, 153, 153);
+    background-color: rgb(243, 152, 16);
     color: yellow;
     border-radius: 8px;
     padding: 8px;
 }
 #sptotal {
-    background-color: purple;
+    background-color: rgb(240, 211, 47);
     color: black;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
 }
+.calculadora button {
+    margin-top: 10px;
+    background: green;
+    color:aqua;
+    padding: 5px 20px;
+    border: none;
+}
+.calculadora button:hover {
+    background: yellow;
+    color: black;
+    cursor: help;
+}
+.splistameses {
+ text-align:start;
+ border-style: dotted;
+ border-color: black;
+ border-width: 1px;
+ color: royalblue;
+ background: white;
+ font-size: 10px;
+ margin-top: 10px;
+
+}
+
